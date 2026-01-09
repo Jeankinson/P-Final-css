@@ -1,0 +1,255 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rudens Restaurants</title>
+   <style>
+      *{
+         margin: 0;
+         padding: 0; box-sizing: border-box;
+      }
+      
+
+       .navbar{
+        background-color: #ff8d0a;
+        color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        
+    }
+
+     .logo-zone{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+    }   
+ 
+    .logo{
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        object-fit: cover;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        box-shadow: 0 0 10px rgba(240, 140 ,255, 0.5);
+    }
+
+     .text{
+        font-size: 20px;
+        font-weight: bold;
+        color: brown;
+        margin: 0px;
+    }
+    .menu a {
+        color: rgb(240, 255, 242);
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 20px;
+        font-family: 'Bodoni MT Black';
+        font-weight: 700;
+    }
+
+    .menu a :hover{
+        text-decoration: underline;
+    }
+     .menu a:hover {
+        background-color: #ddd;
+        color: #f10909; 
+        text-align: right;
+      }
+
+      body{
+        background: url(Background.png) no-repeat center;
+        background-size: cover;
+        height: 80vh;
+         
+      }
+      .header{
+         background: #ff8d0a;
+         color: aliceblue;
+         text-align: left;
+         padding: 20px 10px;         
+      }
+
+      .header h1{
+         font-size: 2.5rem;
+      }
+
+      .container{
+         display: flex;
+         gap: 30px;
+         max-width: 1100px;
+         margin: auto;
+         padding: 40px 20px;
+      }
+      
+      .content{
+         flex: 2;
+      }
+      
+      .content h2{
+         margin-bottom: 15px;
+         color: aliceblue;
+         font-size: large 18px;
+         font-family: Matura MT Script Capitals;
+         text-align: center;
+      }
+      .content p{
+         margin-bottom: 15px;
+         line-height: 1.6;
+         color: aliceblue;
+         font-size: 30px;
+      }
+
+      
+
+      .btn{
+         display: inline-block;
+         padding: 12px 40px;
+         background: #ff8d0a;
+         color: aliceblue;
+         text-decoration: none;
+         border-radius: 5px;
+         align-items: center;
+      }
+
+      .sidebar{
+         flex: 1;
+         background:  rgba(255, 252, 240, 0.119);
+         padding: 20px;
+         border-radius: 8px;
+         
+      }
+      .sidebar ul{
+         list-style: none;
+
+      }
+      .sidebar li{
+         margin-bottom: 10px;   
+         color: rgb(51, 0, 255);
+         font-size: 15px;
+         font-family: Matura MT Script Capitals;  
+         text-align: right;    
+      }
+      .sidebar li :hover{
+        text-decoration: underline;
+    }
+    .sidebar li :hover {
+        background-color: #ddd;
+        color: #f10909; 
+        text-align: right;
+      }
+
+      .sidebar p{
+         color: aliceblue;
+         font-size: large 15px;
+      }
+      .sidebar h2{
+         color: rgb(43, 0, 255);
+         font-size: large 20px;
+      }
+
+      .image{
+         width: 150px;
+         height: 150px;
+      }
+
+      .footer{
+         text-align: center;
+         background: #ff8d0a;
+         color: rgb(247, 247, 241);
+         padding: 20px;
+      }
+      @media(max-width: 768px){
+         .container{
+            flex-direction: column;
+         }
+         .header h1{
+            font-size: 2rem;
+         }
+         .btn{
+            background: #bd1111; 
+            text-decoration: underline;           
+         }
+         .sidebar{
+            background:  #bd1111;
+         }
+
+         .image{
+            margin-bottom: auto;
+            padding-left: 10px;
+         }
+
+      }  
+
+
+
+   </style>
+</head>
+<body>
+         <header class="navbar">
+
+            <div class="logo-zone">
+               <img src="logo.jpg" alt="sa se yo image" class="logo">
+                  <span class="logo-text">RUDENS RESTAURANT</span>
+
+            </div>
+                  <nav class="menu">
+                     <a href="index.html">Acceuil</a>
+                     <a href="Categorie plats.html">Catégorie</a>
+                     <a href="plats special.html">plats special</a>
+                     <a href="Reservation.html">Reservation</a>
+                     <a href="Contact.html">Contact</a>                  
+        
+                  </nav>
+         </header>
+            
+   <section class="container">
+      <!--prezantasyon -->
+      <div class="content">
+         <h2>Bienvenue chez Rudens Restaurant</h2>
+                   
+         <p>
+            Rudens restaurant est Un restaurant haïtien est qui sert une cuisine créole unique, fusionnant
+            des influences africaines, françaises, amérindiennes et espagnoles, caractérisée par des saveurs 
+            audacieuses, épicées, utilisant des herbes, des légumes, du riz, du maïs et des viandes. Il propose
+            des plats emblématiques comme le griot (porc frit) ou le diri ak pwa wouj (riz et haricots rouges) ect..
+        </p>
+        
+       
+
+         <a href="Categorie plats.html" class="btn">Catégorie</a> 
+     </div>
+
+         <!--info-->
+         <div class="sidebar">
+            <h2>Nos differents Services</h2>
+            <ul>
+               <li><a href="Contact.html"> Livraison</a></li>
+               <li><a href="plats special.html"> Commande</a></li>
+               <li><a href="index.html"> Réservation</a></li>
+               <li><a href="Categorie plats.html"> Réceptions des fêtes</a></li>
+            </ul>
+            <img class="image" src="image01.png" alt="Notre 1er image">
+            <p>Ce restaurant haïtien donne une cuisine haïtienne riche et savoureuse, , mettant en vedette des plats
+            emblématiques comme le Griot (porc frit mariné), le Diri Kole (riz collé aux haricots rouges), la Soupe
+            Joumou (giraumon, symbolique de l'Indépendance), et le condiment piquant Pikliz. Elle utilise beaucoup
+            d'épices, d'aromates (ail, oignon, persil), de tubercules (igname, malanga, patate douce) et de bananes
+            plantains, avec des plats servis souvent frits ou en ragoûts, et des boissons comme le Crémas et les jus 
+            de fruits tropicaux.</p>
+
+         </div> 
+              
+   </section>
+   <footer class="footer">
+      <p>
+         &copy;Rudens Restaurant tout droit reserver, Jeankinson Dégeneur. <br>
+         &copy;jeankinsond@gmail.com 
+      </p>
+   </footer>
+</body>
+</html>
+
